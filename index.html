@@ -1,188 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>I AM TECHIE — Website Development by Praveen</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="I AM TECHIE — Website development for you by Praveen. Modern, responsive websites and practical web-handlers guidance." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>I AM TECHIE — Website by Praveen (Colorful)</title>
+    <meta name="description" content="I AM TECHIE — Colorful landing page. Website development for you by Praveen." />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="brand">
-        <h1 class="logo"><span class="accent">I AM</span> TECHIE</h1>
-        <p class="tag">Website development for you — <strong>by Praveen</strong></p>
-      </div>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#handlers">Handlers</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-card">
-          <h2>Beautiful websites that work — fast, secure & responsive</h2>
-          <p class="lead">I build modern websites, landing pages, and small web apps with a focus on performance, accessibility and delightful UI.</p>
-          <div class="cta-row">
-            <a class="btn primary" href="#contact">Get Started</a>
-            <a class="btn ghost" href="#portfolio">See Portfolio</a>
-          </div>
-
-          <ul class="highlights">
-            <li><strong>Fast delivery</strong> — prototypes in 48–72 hours</li>
-            <li><strong>Responsive</strong> — mobile-first designs</li>
-            <li><strong>SEO-ready</strong> — semantic markup & best practices</li>
-          </ul>
-        </div>
-        <div class="hero-image" aria-hidden="true">
-          <div class="device-mock">
-            <div class="screen">
-              <div class="code-sample">
-                <code>&lt;header&gt;I AM TECHIE&lt;/header&gt;</code>
-              </div>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <div class="brand">
+                <h1 class="logo"><span>I AM</span> TECHIE</h1>
+                <p class="tag">Website development for you — <strong>by Praveen</strong></p>
             </div>
-          </div>
+
+            <nav class="nav">
+                <a href="#services">Services</a>
+                <a href="#handlers">Handlers</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section id="services" class="wrap section">
-      <h3 class="section-title">Services</h3>
-      <div class="grid">
-        <article class="card">
-          <h4>Website Design</h4>
-          <p>Clean UI, wireframes, and pixel-perfect layouts tailored to your brand.</p>
-        </article>
-        <article class="card">
-          <h4>Frontend Development</h4>
-          <p>HTML, CSS, and JS with best practices — optimized for performance and accessibility.</p>
-        </article>
-        <article class="card">
-          <h4>Deployment & Hosting</h4>
-          <p>Deploy to Vercel, Netlify, or any preferred host with CI/CD and 1-click deploys.</p>
-        </article>
-      </div>
-    </section>
+    <!-- HERO SECTION -->
+    <main>
+        <section class="hero">
+            <div class="wrap">
 
-    <section id="handlers" class="wrap section pale">
-      <h3 class="section-title">Preferred Website Handlers — Theory & Recommendations</h3>
+                <!-- LEFT CONTENT -->
+                <div class="hero-card">
+                    <h2>Vibrant websites that attract and convert</h2>
+                    <p class="lead">
+                        I build lively, colorful and highly usable websites that make visitors stay and act.
+                        Fast prototypes, clean code and production-ready deployment.
+                    </p>
 
-      <p class="explain">“Handlers” here means the services, patterns and back-end endpoints you use to make your site dynamic, secure and production-ready. Below are practical recommendations and short theory notes.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#contact">Get Started</a>
+                        <a class="btn secondary" href="#portfolio">See Portfolio</a>
+                    </div>
 
-      <div class="handlers-grid">
-        <div class="handler">
-          <h4>Static Site Hosting</h4>
-          <p><strong>When to use:</strong> Landing pages, blogs, marketing sites.</p>
-          <p><strong>Platforms:</strong> Netlify, Vercel, GitHub Pages</p>
-          <p><strong>Theory:</strong> Use static generation (SSG) or plain static files. Offload complexity to serverless functions for dynamic parts.</p>
-        </div>
+                    <div class="highlights">
+                        <span class="pill">48–72h Prototype</span>
+                        <span class="pill">Mobile-first</span>
+                        <span class="pill">SEO Ready</span>
+                    </div>
+                </div>
 
-        <div class="handler">
-          <h4>Serverless Functions</h4>
-          <p><strong>When to use:</strong> Form processing, small APIs, webhook handlers.</p>
-          <p><strong>Platforms:</strong> Netlify Functions, Vercel Serverless, AWS Lambda</p>
-          <p><strong>Theory:</strong> Serverless scales automatically, pay-per-execution. Keep functions small and stateless; use a managed DB or external API for persistence.</p>
-        </div>
+                <!-- RIGHT GRADIENT CARD -->
+                <div class="hero-image" aria-hidden="true">
+                    <div class="gradient-card">
+                        <div class="spark s1"></div>
+                        <div class="spark s2"></div>
 
-        <div class="handler">
-          <h4>Traditional Server (Node / Express)</h4>
-          <p><strong>When to use:</strong> Complex backends, persistent WebSocket connections, heavy processing.</p>
-          <p><strong>Theory:</strong> Use Express or Fastify for route handlers, separate logic into controllers/services, add caching and rate-limiting middleware, secure with Helmet and validation.</p>
-        </div>
+                        <div class="device-mock">
+                            <div class="code-box" id="codeBox"></div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="handler">
-          <h4>Form & Contact Handlers</h4>
-          <p><strong>Options:</strong> Netlify forms, Formspree, direct serverless endpoint.</p>
-          <p><strong>Theory:</strong> Prefer server-side validation and spam protection (reCAPTCHA). Store entries in a database or forward to email with transactional provider.</p>
-        </div>
+            </div>
+        </section>
 
-        <div class="handler">
-          <h4>Authentication Handlers</h4>
-          <p><strong>Options:</strong> Auth0, Firebase Auth, NextAuth.js</p>
-          <p><strong>Theory:</strong> Use tested solutions for auth. Keep session tokens short-lived, use refresh tokens securely, always use HTTPS and secure cookies.</p>
-        </div>
+        <!-- SERVICES -->
+        <section id="services" class="section wrap">
+            <h3 class="section-title">Services</h3>
+            <div class="grid">
+                <article class="card">
+                    <h4>Design & Branding</h4>
+                    <p>Colorful and consistent brand identity, UI kits and motion ideas.</p>
+                </article>
 
-        <div class="handler">
-          <h4>APIs & Webhooks</h4>
-          <p><strong>Theory:</strong> Design RESTful or GraphQL endpoints. Use HMAC signatures for webhooks and validate payloads. Version your API.</p>
-        </div>
-      </div>
+                <article class="card">
+                    <h4>Frontend Development</h4>
+                    <p>Responsive HTML, modern CSS and accessible interactions.</p>
+                </article>
 
-      <div class="handler-note">
-        <strong>Quick implementation idea:</strong> Host the static site on Vercel / Netlify, create one serverless function for contact forms, and use a small Node/Express service (or managed backend) for heavier APIs.
-      </div>
-    </section>
+                <article class="card">
+                    <h4>Deploy & Optimize</h4>
+                    <p>One-click deploy, image optimization, analytics and monitoring.</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="portfolio" class="wrap section">
-      <h3 class="section-title">Portfolio — Quick Samples</h3>
-      <div class="portfolio-grid">
-        <div class="portfolio-card">
-          <div class="thumb">Landing</div>
-          <h5>Product Landing</h5>
-          <p>Fast-loading landing page with clear CTAs and analytics ready.</p>
-        </div>
-        <div class="portfolio-card">
-          <div class="thumb">Blog</div>
-          <h5>Static Blog</h5>
-          <p>Markdown-driven blog with SEO and social previews.</p>
-        </div>
-        <div class="portfolio-card">
-          <div class="thumb">App</div>
-          <h5>Mini Web App</h5>
-          <p>Small dashboard connected to a simple API + auth.</p>
-        </div>
-      </div>
-    </section>
+        <!-- HANDLERS -->
+        <section id="handlers" class="section wrap">
+            <h3 class="section-title">Preferred Website Handlers — Theory & Recommendations</h3>
 
-    <section id="contact" class="wrap section pale contact-section">
-      <h3 class="section-title">Contact / Get a Quote</h3>
+            <div class="handlers-grid">
+                <div class="handler">
+                    <h4>Static Hosting</h4>
+                    <p>Use for landing pages and marketing sites. Combine with serverless functions.</p>
+                    <div class="tag">Static + Serverless</div>
+                </div>
 
-      <div class="contact-grid">
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! I will contact you shortly.');">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" placeholder="Tell me about your project" required></textarea>
-          </label>
-          <button class="btn primary" type="submit">Send Message</button>
-        </form>
+                <div class="handler">
+                    <h4>Serverless Functions</h4>
+                    <p>Great for forms, small APIs and webhooks. Fast & scalable.</p>
+                    <div class="tag">Function-first</div>
+                </div>
 
-        <div class="contact-info">
-          <h4>Prefered handles</h4>
-          <p><strong>GitHub:</strong> <a href="https://github.com/praveen" target="_blank" rel="noopener">github.com/praveen</a></p>
-          <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/praveen</a></p>
-          <p><strong>Email:</strong> <a href="mailto:praveen@example.com">praveen@example.com</a></p>
+                <div class="handler">
+                    <h4>Node / Express</h4>
+                    <p>Perfect for real-time apps, complex logic and custom APIs.</p>
+                    <div class="tag">Full Backend</div>
+                </div>
 
-          <div class="small-note">
-            Want this live quickly? I recommend Netlify or Vercel (free tiers available) — I can deploy it for you.
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+                <div class="handler">
+                    <h4>Auth & Forms</h4>
+                    <p>Use Auth0, Firebase Auth, or NextAuth. Secure backend forms.</p>
+                    <div class="tag">Secure & Reliable</div>
+                </div>
+            </div>
+        </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span id="year"></span> I AM TECHIE — Website development for you by Praveen</p>
-    </div>
-  </footer>
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="section wrap">
+            <h3 class="section-title">Portfolio — Quick Samples</h3>
 
-  <script>
-    // small JS touches (keeps the page static-friendly)
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+            <div class="portfolio-grid">
+                <div class="portfolio-card card">
+                    <div class="thumb">Landing</div>
+                    <h5>Product Landing</h5>
+                    <p>Conversion-focused landing pages with strong CTAs.</p>
+                </div>
+
+                <div class="portfolio-card card">
+                    <div class="thumb">Blog</div>
+                    <h5>Static Blog</h5>
+                    <p>Fast, markdown-driven blogs with SEO metadata.</p>
+                </div>
+
+                <div class="portfolio-card card">
+                    <div class="thumb">App</div>
+                    <h5>Mini Web App</h5>
+                    <p>Dashboards and apps connected to small APIs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section wrap">
+            <h3 class="section-title">Contact / Get a Quote</h3>
+
+            <div class="contact-grid">
+
+                <form class="contact-form"
+                      onsubmit="event.preventDefault(); alert('Thanks! Praveen will contact you soon.');">
+                    <label>Name
+                        <input type="text" name="name" required />
+                    </label>
+
+                    <label>Email
+                        <input type="email" name="email" required />
+                    </label>
+
+                    <label>Message
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+
+                    <button class="btn primary" type="submit">Send Message</button>
+                </form>
+
+                <aside class="contact-info">
+                    <h4>Preferred handles</h4>
+                    <p><strong>GitHub:</strong> github.com/praveen</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/praveen</p>
+                    <p><strong>Email:</strong> praveen@example.com</p>
+
+                    <div class="deploy-tip">
+                        Deploy Suggestion: Use Vercel / Netlify for instant previews.
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer wrap">
+        <p>© <span id="year"></span> I AM TECHIE — Website development for you by Praveen</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Footer Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Display code snippet correctly (never renders as HTML)
+        document.getElementById('codeBox').textContent =
+`<header>I AM TECHIE</header>
+            <h1>Hello, World!</h1>`;
+    </script>
+
 </body>
 </html>
